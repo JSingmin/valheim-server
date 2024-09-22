@@ -38,5 +38,5 @@ RUN chmod +x /start.sh
 EXPOSE 2456-2458/udp
 
 USER valheim
-ENTRYPOINT ["/bin/bash"]
-#ENTRYPOINT ["/start.sh"]
+#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/start.sh"]
