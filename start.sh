@@ -12,6 +12,6 @@ export SteamAppId=892970
   -password "$SERVER_PASSWORD" \
   -savedir "/storage" \
   -public 0 \
-  -crossplay
+  -nographics
 
 export LD_LIBRARY_PATH=$TEMP_LD_PATH
