@@ -26,6 +26,8 @@ RUN dpkg --add-architecture i386 \
     /opt/steamcmd/linux32/steamcmd \
     /opt/steamcmd/linux32/steamerrorreporter \
     && su - valheim -c "/opt/steamcmd/steamcmd.sh +login anonymous +quit" \
+    && mkdir -p /root/.steam/sdk64 \
+    && ln -s /opt/steamcmd/linux64/steamclient.so /root/.steam/sdk64/ \
     && apt-get remove -y \
     curl \
     && apt-get autoremove -y \
